@@ -87,14 +87,14 @@ console.log(resultado)
 // Quando eu faço um saque de 500 reais
 // Então o valor é debitado do meu saldo
 
-var saldo = 1000
+// var saldo = 1000
 
-function saque(valor) {
-    saldo = saldo - valor
-}
+// function saque(valor) {
+//     saldo = saldo - valor
+// }
 
-saque(500)
-console.log(saldo)
+// saque(500)
+// console.log(saldo)
 
 // Cenário 2: Saque com valor superior ao saldo em conta
 // Dado que o meu saldo é de 1000 reais
@@ -102,19 +102,19 @@ console.log(saldo)
 // Então não de permitir o saque
 // E deve mostrar uma mensagem de alerta informando que o valor é superior ao saldo
 
-var saldo = 1000
+// var saldo = 1000
 
-function saque(valor) {
-    if(valor > saldo) {
-        console.log('Valor do saque superior ao saldo')
-    }else{
-        saldo = saldo - valor
-    }
+// function saque(valor) {
+//     if(valor > saldo) {
+//         console.log('Valor do saque superior ao saldo')
+//     }else{
+//         saldo = saldo - valor
+//     }
     
-}
+// }
 
-saque(1001)
-console.log(saldo)
+// saque(1001)
+// console.log(saldo)
 
 // Cenário 3: saque com o valor máximo
 // Dado que o meu saldo é de 1000 reais
@@ -123,18 +123,49 @@ console.log(saldo)
 // Então não de permitir o saque
 // E deve mostrar uma mensagem de alerta informando que o valor é superior ao máximo permitido por operação
 
-var saldo = 1000
+// var saldo = 1000
 
-function saque(valor) {
-    if(valor > saldo) {
-        console.log('Valor do saque superior ao saldo')
-    }else if (valor > 700){
-        console.log('Valor do saque superior ao máximo permitido por operação')
-    }else{
-        saldo = saldo - valor
-    }
+// function saque(valor) {
+//     if(valor > saldo) {
+//         console.log('Valor do saque superior ao saldo')
+//     }else if (valor > 700){
+//         console.log('Valor do saque superior ao máximo permitido por operação')
+//     }else{
+//         saldo = saldo - valor
+//     }
     
-}
+// }
 
-saque(701)
-console.log(saldo)
+// saque(701)
+// console.log(saldo)
+
+
+// Arrays//
+
+/*var gaveteiro = ['Meias', 'Gravatas', 'Documentos', 'Salgadinhos']
+
+console.log(gaveteiro[0])*/
+
+var personagens = ['Mestre Yoda', 'Luke Skywalker', 'Princesa Leia', 'Darth Vader']
+
+console.log( typeof personagens)
+
+//para adicionar um novo personagem
+personagens.push('C3pO')
+personagens.push('R2D2')
+console.log(personagens)
+
+//Remover o último item da lista
+personagens.pop()
+
+//Remover um item específico do array
+personagens = personagens.filter(function(p){
+    return p !== 'Darth Vader'
+})
+
+//Remover um item específico do array
+personagens = personagens.filter(function(p){
+    return p === 'Mestre Yoda'
+})
+
+console.log(personagens)
