@@ -208,6 +208,7 @@ for (var i  = 0; i <= 10; i++) {
 // yoda.idade = 100
 // yoda.jedi = true 
 
+/*
 var yoda = {
     nome: 'Mestre Yoda',
     idade: 100,
@@ -220,3 +221,12 @@ var yoda = {
 
 console.log(yoda)
 yoda.mostraIdade()
+*/
+
+//Constantes
+
+const nome = 'Darth Vader'
+console.log(nome)
+
+nome = 'Mestre Yoda'
+console.log(nome)
