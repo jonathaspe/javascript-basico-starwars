@@ -172,7 +172,7 @@ console.log(personagens)*/
 
 // Controles de repetição (Loops)
 
-var personagens = ['Mestre Yoda', 'Luke Skywalker', 'Princesa Leia', 'Darth Vader']
+/*var personagens = ['Mestre Yoda', 'Luke Skywalker', 'Princesa Leia', 'Darth Vader']
 
 // console.log(personagens[0])
 // console.log(personagens[1])
@@ -198,4 +198,25 @@ for (var i in personagens) {
 for (var i  = 0; i <= 10; i++) {
     console.log(i)
     // o código será executado até que a condição retorne false, ou seja, até que i seja maior que 10
-}
+}*/
+
+//Objetos
+
+// var yoda = {}
+
+// yoda.nome = 'Mestre Yoda'
+// yoda.idade = 100
+// yoda.jedi = true 
+
+var yoda = {
+    nome: 'Mestre Yoda',
+    idade: 100,
+    jedi: true,
+    //criação de função com interpolação de string
+    mostraIdade: function() {
+        console.log(`A idade do ${this.nome} é ${this.idade} anos`)
+    }
+} 
+
+console.log(yoda)
+yoda.mostraIdade()
