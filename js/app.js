@@ -144,7 +144,7 @@ console.log(resultado)
 
 /*var gaveteiro = ['Meias', 'Gravatas', 'Documentos', 'Salgadinhos']
 
-console.log(gaveteiro[0])*/
+console.log(gaveteiro[0])
 
 var personagens = ['Mestre Yoda', 'Luke Skywalker', 'Princesa Leia', 'Darth Vader']
 
@@ -168,4 +168,34 @@ personagens = personagens.filter(function(p){
     return p === 'Mestre Yoda'
 })
 
-console.log(personagens)
+console.log(personagens)*/
+
+// Controles de repetição (Loops)
+
+var personagens = ['Mestre Yoda', 'Luke Skywalker', 'Princesa Leia', 'Darth Vader']
+
+// console.log(personagens[0])
+// console.log(personagens[1])
+// console.log(personagens[2])
+// console.log(personagens[3])
+
+//Visualizar cada um dos itens que estão no array personagens
+personagens.forEach(function(p){
+    console.log(p)
+})
+
+//Visualizar a posição de cada um dos itens do array personagens
+for (var i in personagens) {
+    console.log(i)
+}
+
+//Visualizar cada um dos itens do array personagens
+for (var i in personagens) {
+    console.log(personagens[i])
+}
+
+//Visualizar cada um dos itens do array personagens
+for (var i  = 0; i <= 10; i++) {
+    console.log(i)
+    // o código será executado até que a condição retorne false, ou seja, até que i seja maior que 10
+}
